@@ -30,7 +30,7 @@ if __name__ == "__main__":
     print('CLASS_COUNT:%d'%CLASS_COUNT)
 
     som = SOM(8, 8)  # initialize the SOM
-    som.fit(X, 10000, save_e=True, interval=100)  # fit the SOM for 10000 epochs, save the error every 100 steps
+    som.fit(X, 25000, save_e=True, interval=100)  # fit the SOM for 10000 epochs, save the error every 100 steps
     som.plot_error_history(filename='images/som_error.png')  # plot the training error history
 
     # now visualize the learned representation with the class labels
