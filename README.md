@@ -1,4 +1,5 @@
-# Unsupervised clustering for the UCI-WINE dataset using Kohonen network
+# Kohonen Network with Wine Dataset
+[Dataset](http://archive.ics.uci.edu/ml/datasets/wine)
 
 ## Kohonen Network
 Kohnen Network使用[@alexarnimueller](https://github.com/alexarnimueller)所撰寫的[Source Code](https://github.com/alexarnimueller/som)
