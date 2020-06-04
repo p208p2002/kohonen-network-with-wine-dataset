@@ -26,7 +26,7 @@ def feature_normalizatoion(X):
 ## Results
 
 ### 網路權重熱力圖
-<img src="https://github.com/p208p2002/kohonen-network-with-wine-dataset/blob/master/images/distance_map.png?raw=true" width="200px"/>
+<img src="https://github.com/p208p2002/kohonen-network-with-wine-dataset/blob/master/images/distance_map.png?raw=true" width="400px"/>
 
 ### 各別類別權重熱力圖
 <div style='display:inline'>
