@@ -38,6 +38,6 @@ def feature_normalizatoion(X):
 <img src="https://github.com/p208p2002/kohonen-network-with-wine-dataset/blob/master/images/class_3.png?raw=true" width="200px"/>
 </div>
 
-## 分群結果視覺化
+### 分群結果視覺化
 <img src="https://github.com/p208p2002/kohonen-network-with-wine-dataset/blob/master/images/som.png?raw=true" width="400px"/>
 </div>
