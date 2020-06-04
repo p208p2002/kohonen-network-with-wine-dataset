@@ -16,17 +16,27 @@ def feature_normalizatoion(X):
     return X
 ```
 
-## Kohonen Network Setting
+## Kohonen Network Training
 - network size : 8*8
 - epoch : 10000
 - learning rate : `lr = 1 / (1 + (epoch / 0.5) **4)`
 
+<img src="https://github.com/p208p2002/kohonen-network-with-wine-dataset/blob/master/images/som_error.png?raw=true" width="400px"/>
+
 ## Results
-### 個別類別權重熱力圖
+
+### 網路權重熱力圖
+<img src="https://github.com/p208p2002/kohonen-network-with-wine-dataset/blob/master/images/distance_map.png?raw=true" width="200px"/>
+
+### 各別類別權重熱力圖
 <div style='display:inline'>
 <img src="https://github.com/p208p2002/kohonen-network-with-wine-dataset/blob/master/images/class_1.png?raw=true" width="200px"/>
 
 <img src="https://github.com/p208p2002/kohonen-network-with-wine-dataset/blob/master/images/class_2.png?raw=true" width="200px"/>
 
 <img src="https://github.com/p208p2002/kohonen-network-with-wine-dataset/blob/master/images/class_3.png?raw=true" width="200px"/>
+</div>
+
+## 分群結果視覺化
+<img src="https://github.com/p208p2002/kohonen-network-with-wine-dataset/blob/master/images/som.png?raw=true" width="400px"/>
 </div>
