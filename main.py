@@ -10,8 +10,8 @@ print = logging.info
 def feature_normalizatoion(X):
     for i in range(len(X)):
         x = X[i]
-        x_sqare_sum = np.sum(x**2)
-        x = [f/x_sqare_sum for f in x]
+        x_sqare_sum_root = np.sum(x**2)**0.5
+        x = [f/x_sqare_sum_root for f in x]
         X[i] = x
     return X
 
@@ -39,7 +39,7 @@ if __name__ == "__main__":
     print('CLASS_COUNT:%d'%CLASS_COUNT)
 
     som = SOM(8, 8)  # initialize the SOM
-    som.fit(X, 25000, save_e=True, interval=100)  # fit the SOM for 10000 epochs, save the error every 100 steps
+    som.fit(X, 10000, save_e=True, interval=100)  # fit the SOM for 10000 epochs, save the error every 100 steps
     som.plot_error_history(filename='images/som_error.png')  # plot the training error history
 
     # now visualize the learned representation with the class labels
