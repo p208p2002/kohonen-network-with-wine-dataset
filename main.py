@@ -7,7 +7,7 @@ FORMAT = '%(filename)s line:%(lineno)d\t%(message)s'
 logging.basicConfig(level=logging.INFO,format=FORMAT)
 print = logging.info
 
-def feature_normalizatoion(X):
+def feature_normalization(X):
     count_featrue = X.shape[-1]
     f_maxs = []
     f_mins = []
@@ -43,7 +43,7 @@ if __name__ == "__main__":
         data = f.read()
     data = data.split('\n')[:-1]
     X,Y = make_XY(data)
-    X = feature_normalizatoion(X)
+    X = feature_normalization(X)
     # exit()
     FEATURE_COUNT = len(X[0])
     CLASS_COUNT = len(list(set(Y)))
