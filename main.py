@@ -7,7 +7,7 @@ FORMAT = '%(filename)s line:%(lineno)d\t%(message)s'
 logging.basicConfig(level=logging.INFO,format=FORMAT)
 print = logging.info
 
-def feature_normalizatoion(X):    
+def feature_normalizatoion(X):
     count_featrue = X.shape[-1]
     f_maxs = []
     f_mins = []

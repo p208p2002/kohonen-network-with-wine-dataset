@@ -9,11 +9,23 @@ Kohnen Network使用[@alexarnimueller](https://github.com/alexarnimueller)所撰
 進行資料特徵歸一化，為了更佳的分群效果
 ```python
 def feature_normalizatoion(X):
+    count_featrue = X.shape[-1]
+    f_maxs = []
+    f_mins = []
+
+    for i in range(count_featrue):
+        f_max = np.max(X[:,[i]])
+        f_min = np.min(X[:,[i]])
+        f_maxs.append(f_max)
+        f_mins.append(f_min)
+
     for i in range(len(X)):
-        x = X[i]
-        x_sqare_sum_root = np.sum(x**2)**0.5
-        x = [f/x_sqare_sum_root for f in x]
-        X[i] = x
+        x_normalizatoion = np.array([0.0]*13)
+        for j in range(len(X[i])):
+            f_max = f_maxs[j]
+            f_min = f_mins[j]
+            x_normalizatoion[j] = (X[i][j] - f_min)/(f_max - f_min)
+        X[i] = x_normalizatoion
     return X
 ```
 
