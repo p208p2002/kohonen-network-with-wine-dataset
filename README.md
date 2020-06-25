@@ -5,10 +5,10 @@
 Kohnen Network使用[@alexarnimueller](https://github.com/alexarnimueller)所撰寫的[Source Code](https://github.com/alexarnimueller/som)
 > Source Code Ref: Kohonen, T. Self-Organized Formation of Topologically Correct Feature Maps. Biol. Cybern. 1982, 43 (1), 59–69.
 
-## Feature Normalizatoion
+## Feature Normalization
 進行資料特徵歸一化，為了更佳的分群效果
 ```python
-def feature_normalizatoion(X):
+def feature_normalization(X):
     count_featrue = X.shape[-1]
     f_maxs = []
     f_mins = []
